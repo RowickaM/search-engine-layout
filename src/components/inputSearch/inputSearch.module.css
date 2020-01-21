@@ -1,0 +1,68 @@
+.input-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input-search input {
+  width: 60%;
+  font-size: 25px;
+  padding: 5px 15px;
+  color: #262626;
+}
+.input-search .button-search {
+  padding: 10px 50px;
+  border-radius: 0 0 15px 15px;
+}
+.input-search .button {
+  background-color: #c2262e;
+  border-color: transparent;
+  text-transform: uppercase;
+  padding: 15px 50px;
+  max-width: 290px;
+}
+.input-search .button p {
+  font-size: 25px;
+  color: #ffffff;
+  text-align: center;
+  width: 187px;
+  padding: 0;
+  margin: 0;
+  line-height: 1.5em;
+}
+
+@media (max-width: 1600px) {
+  .input-search .button-search {
+    padding: 5px;
+  }
+  .input-search .button-search p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .input-search {
+    justify-content: center;
+    flex-direction: row;
+  }
+  .input-search input {
+    width: 55%;
+  }
+  .input-search .button-search {
+    padding: 4px;
+    border-radius: unset;
+  }
+}
+@media (max-width: 568px) {
+  .input-search {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .input-search input {
+    width: 100%;
+  }
+  .input-search .button-search {
+    padding: 4px;
+    border-radius: unset;
+  }
+}
+
+/*# sourceMappingURL=inputSearch.module.css.map */

@@ -1,0 +1,90 @@
+.head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.head.search h1 {
+  font-size: 120px;
+}
+.head .header {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.head .header h1 {
+  font-size: 140px;
+  margin: 0;
+}
+.head .header .heart {
+  position: relative;
+  left: 15px;
+  top: 8px;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  background-color: var(--red);
+}
+.head .header .heart:after, .head .header .heart:before {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  content: "";
+  border-radius: 50%;
+  background-color: var(--red);
+}
+.head .header .heart:after {
+  top: -13px;
+  right: 0;
+}
+.head .header .heart:before {
+  bottom: 0;
+  left: -13px;
+}
+.head p {
+  text-align: center;
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: var(--red);
+}
+
+@media (max-width: 1600px) {
+  .head.search .header h1 {
+    font-size: 130px;
+  }
+}
+@media (max-width: 1366px) {
+  .head.search .header h1 {
+    font-size: 90px;
+  }
+}
+@media (max-width: 1024px) {
+  .head .header h1 {
+    font-size: 80px;
+  }
+}
+@media (max-width: 768px) {
+  .head p {
+    font-size: 18px;
+  }
+  .head.search .header h1 {
+    font-size: 77px;
+  }
+  .head .header h1 {
+    font-size: 80px;
+  }
+}
+@media (max-width: 568px) {
+  .head p {
+    font-size: 15px;
+  }
+  .head .header h1 {
+    font-size: 34px;
+  }
+  .head.search .header h1 {
+    font-size: 30px;
+  }
+}
+
+/*# sourceMappingURL=header.module.css.map */

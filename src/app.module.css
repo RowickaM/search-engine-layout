@@ -1,0 +1,33 @@
+.centerDiv {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.search {
+  height: 22em;
+}
+
+@media (max-width: 1600px) {
+  .search {
+    height: 21em;
+  }
+}
+@media (max-width: 1366px) {
+  .search {
+    height: 21em;
+  }
+}
+@media (max-width: 1024px) {
+  .search {
+    height: 18em;
+  }
+}
+@media (max-width: 568px) {
+  .search {
+    height: 14em;
+  }
+}
+
+/*# sourceMappingURL=app.module.css.map */

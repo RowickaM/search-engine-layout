@@ -1,0 +1,6 @@
+.line {
+    background-color: var(--red);
+    width: 8px;
+    position: fixed;
+    transform: rotate(45deg);
+}

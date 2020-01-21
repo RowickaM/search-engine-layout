@@ -1,0 +1,130 @@
+@import "./../../asset/scss/mediaqueries";
+
+.head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &.search h1 {
+    font-size: 120px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+
+    h1 {
+      font-size: 140px;
+      margin: 0;
+    }
+
+    .heart {
+      position: relative;
+      left: 15px;
+      top: 8px;
+      width: 20px;
+      height: 20px;
+      transform: rotate(45deg);
+      background-color: var(--red);
+
+      &:after, &:before {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        content: '';
+        border-radius: 50%;
+        background-color: var(--red);
+      }
+
+      &:after {
+        top: -13px;
+        right: 0;
+      }
+
+      &:before {
+        bottom: 0;
+        left: -13px;
+      }
+    }
+  }
+
+  p {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: var(--red);
+  }
+}
+
+@include breakpoints('laptop') {
+  .head.search {
+    .header {
+      h1 {
+        font-size: 130px;
+      }
+    }
+  }
+}
+
+@include breakpoints('tablet10') {
+  .head.search {
+    .header {
+      h1 {
+        font-size: 90px;
+      }
+    }
+  }
+}
+
+@include breakpoints('tablet7') {
+  .head {
+
+    .header {
+      h1 {
+        font-size: 80px;
+      }
+    }
+  }
+}
+
+@include breakpoints('phoneL') {
+  .head {
+    p {
+      font-size: 18px;
+    }
+
+    &.search .header h1 {
+      font-size: 77px;
+    }
+    .header {
+      h1 {
+        font-size: 80px;
+      }
+    }
+  }
+}
+
+@include breakpoints('phoneP') {
+  .head {
+    p {
+      font-size: 15px;
+    }
+
+    .header {
+      h1 {
+        font-size: 34px;
+      }
+    }
+
+    &.search {
+      .header {
+        h1 {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}

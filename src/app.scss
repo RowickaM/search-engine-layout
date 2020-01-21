@@ -1,0 +1,34 @@
+@import "asset/scss/mediaqueries";
+.centerDiv{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.search{
+  height: 22em;
+}
+
+@include breakpoints('laptop') {
+  .search{
+    height: 21em;
+  }
+}
+
+@include breakpoints('tablet10') {
+  .search{
+    height: 21em;
+  }
+}
+
+@include breakpoints('tablet7') {
+  .search{
+    height: 18em;
+  }
+}
+
+@include breakpoints('phoneP') {
+  .search{
+    height: 14em;
+  }
+}

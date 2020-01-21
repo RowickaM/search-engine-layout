@@ -1,0 +1,133 @@
+@import "../../../asset/scss/mediaqueries";
+@import "../../../asset/scss/variable";
+
+.article .number, .article .title {
+  color: $white;
+  z-index: 2;
+
+}
+
+.article {
+  width: $wTriangle;
+  height: $wTriangle;
+  background-color: $red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+
+  .number {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    //background: white;
+    font-size: $sizeParagraph2;
+    transition: bottom $time-animation linear, left $time-animation linear;
+  }
+
+  .title {
+    position: absolute;
+    text-align: center;
+    font-size: $sizeHeader;
+    top: 10%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: $wTriangle - 5px;
+    transition: top $time-animation linear,
+    right $time-animation linear,
+    font-size $time-animation linear;
+  }
+
+  .desc {
+    width: 0;
+    height: $wTriangle;
+    background-color: $white;
+    position: absolute;
+    top: 0;
+    display: flex;
+    transition: width ease-in-out $time-animation;
+
+    p {
+      text-align: center;
+      z-index: 2;
+      color: $black;
+      font-size: $sizeParagraph2;
+      width: 50%;
+      margin: auto;
+      height: 0;
+      overflow-x: auto;
+    }
+  }
+
+  .triangle {
+    position: absolute;
+    z-index: 1;
+
+    &.down {
+      border-bottom: $wTriangle solid $red;
+      border-right: $wTriangle solid transparent;
+      bottom: 0;
+      left: 0;
+      transition: bottom ease-in-out $time-animation, left ease-in-out $time-animation;
+    }
+
+    &.up {
+      border-top: $wTriangle solid $red;
+      border-left: $wTriangle solid transparent;
+      top: 0;
+      right: 0;
+      transition: top ease-in-out $time-animation, right ease-in-out $time-animation;
+    }
+
+  }
+
+  &.show {
+    z-index: 3;
+
+    .number {
+      left: -50px;
+      bottom: -1 * $gap;
+      right: 0;
+    }
+
+    .title {
+      width: $wTriangle1 / 2;
+      top:  -1 * $gap + 10px;
+      right: $wTriangle1 - $wDesc;
+      left: unset;
+      bottom: unset;
+      font-size: $sizeParagraph2;
+      text-align: right;
+      padding: 5px 15px;
+    }
+
+    .desc {
+      width: $wDesc;
+
+      p {
+        height: 60%;
+        transition: height linear $time-animation $time-delay;
+      }
+    }
+
+    .triangle{
+      &.down{
+        bottom: -1 * $gap;
+        left: -1 * $gap;
+      }
+      &.up{
+        top: -1 * $gap;
+        right: $wTriangle - $wDesc - $gap;
+      }
+    }
+  }
+
+  &.hide {
+    .desc p {
+      transition: height linear $time-animation;
+    }
+  }
+}

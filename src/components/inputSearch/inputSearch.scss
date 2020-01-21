@@ -1,0 +1,74 @@
+@import "./../../asset/scss/mediaqueries";
+@import "./../../asset/scss/variable";
+.input-search{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  input{
+    width: 60%;
+    font-size: 25px;
+    padding: 5px 15px;
+    color: $black;
+  }
+  .button-search{
+    padding: 10px 50px;
+    border-radius: 0 0 15px 15px;
+  }
+  .button{
+    background-color: $red;
+    border-color: transparent;
+    text-transform: uppercase;
+    padding: 15px 50px;
+    max-width: 290px;
+    p{
+      font-size: 25px;
+      color: $white;
+      text-align: center;
+      width: 187px;
+      padding: 0;
+      margin: 0;
+      line-height: 1.5em;
+    }
+  }
+}
+
+@include breakpoints('laptop'){
+  .input-search{
+    .button-search {
+      padding: 5px;
+      p{
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@include breakpoints('phoneL'){
+  .input-search{
+    justify-content: center;
+    flex-direction: row;
+
+    input{
+      width: 55%;
+    }
+    .button-search{
+      padding: 4px;
+      border-radius: unset;
+    }
+  }
+}
+
+@include breakpoints('phoneP'){
+  .input-search{
+    justify-content: center;
+    flex-direction: column;
+
+    input{
+      width: 100%;
+    }
+    .button-search{
+      padding: 4px;
+      border-radius: unset;
+    }
+  }
+}

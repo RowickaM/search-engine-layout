@@ -1,0 +1,109 @@
+.article .number, .article .title {
+  color: #ffffff;
+  z-index: 2;
+}
+
+.article {
+  width: 300px;
+  height: 300px;
+  background-color: #c2262e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.article .number {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 15px;
+  transition: bottom 0.5s linear, left 0.5s linear;
+}
+.article .title {
+  position: absolute;
+  text-align: center;
+  font-size: 28px;
+  top: 10%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 295px;
+  transition: top 0.5s linear, right 0.5s linear, font-size 0.5s linear;
+}
+.article .desc {
+  width: 0;
+  height: 300px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  display: flex;
+  transition: width ease-in-out 0.5s;
+}
+.article .desc p {
+  text-align: center;
+  z-index: 2;
+  color: #262626;
+  font-size: 15px;
+  width: 50%;
+  margin: auto;
+  height: 0;
+  overflow-x: auto;
+}
+.article .triangle {
+  position: absolute;
+  z-index: 1;
+}
+.article .triangle.down {
+  border-bottom: 300px solid #c2262e;
+  border-right: 300px solid transparent;
+  bottom: 0;
+  left: 0;
+  transition: bottom ease-in-out 0.5s, left ease-in-out 0.5s;
+}
+.article .triangle.up {
+  border-top: 300px solid #c2262e;
+  border-left: 300px solid transparent;
+  top: 0;
+  right: 0;
+  transition: top ease-in-out 0.5s, right ease-in-out 0.5s;
+}
+.article.show {
+  z-index: 3;
+}
+.article.show .number {
+  left: -50px;
+  bottom: -30px;
+  right: 0;
+}
+.article.show .title {
+  width: 135px;
+  top: -20px;
+  right: -330px;
+  left: unset;
+  bottom: unset;
+  font-size: 15px;
+  text-align: right;
+  padding: 5px 15px;
+}
+.article.show .desc {
+  width: 600px;
+}
+.article.show .desc p {
+  height: 60%;
+  transition: height linear 0.5s 0.5s;
+}
+.article.show .triangle.down {
+  bottom: -30px;
+  left: -30px;
+}
+.article.show .triangle.up {
+  top: -30px;
+  right: -330px;
+}
+.article.hide .desc p {
+  transition: height linear 0.5s;
+}
+
+/*# sourceMappingURL=articleItem.module.css.map */
