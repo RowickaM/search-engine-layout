@@ -54,7 +54,7 @@
       z-index: 2;
       color: $black;
       font-size: $sizeParagraph2;
-      width: 50%;
+      width: 44%;
       margin: auto;
       height: 0;
       overflow-x: auto;
@@ -186,11 +186,15 @@
   }
 }
 
+@include breakpoints('phoneL'){
+  .article {
+    left: calc(50% - 230px);
+  }
+}
+
 @include breakpoints('phoneP'){
   .article {
     left: -$gap;
-    //width: $wTriangle-pP;
-    //height: $wTriangle-t10;
 
     .triangle {
 

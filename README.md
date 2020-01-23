@@ -1,68 +1,34 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##Uruchomienie aplikacji
+Upewnij się, że na swoim komuterze masz zainstalowany Node.JS.
 
-## Available Scripts
-
-In the project directory, you can run:
-
+Uruchom program, w którym będziesz mógł wpisać polecenia (np. cmd). Przejdź do folderu z projektem. Wpisz polecenie
+### `npm install`
+Nasepnie wpisz polecenie 
 ### `npm start`
+Poczekaj chwilę. Jeśli nie włączy sięstrona w przeglądarce należy wpisać w pasek adresu 
+### `localhost:3000`
+Nie wyłączaj okna z uruchomionym serwerem (np. cmd).
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+##Wygląd aplikacji
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+###dla szerokości ekranu >1600
+![1682](https://user-images.githubusercontent.com/33415084/73004930-6dbd3b80-3e08-11ea-881d-507d70055e70.png)
+Na zdjęciu poniżej pokazano rozwinięty artykuł 
+![1682-hover](https://user-images.githubusercontent.com/33415084/73004931-6e55d200-3e08-11ea-86d3-f80882974961.png)
 
-### `npm test`
+###dla szerokości ekranu 1600-1367
+![1600](https://user-images.githubusercontent.com/33415084/73004939-6eee6880-3e08-11ea-93a1-7610c6ebb93f.png)
+Na zdjęciu poniżej pokazano rozwinięty artykuł 
+![1600-hover](https://user-images.githubusercontent.com/33415084/73004942-6eee6880-3e08-11ea-92c9-76dc0c2a41da.png)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+###dla szerokości ekranu 1366-1025 (tablet 10")
+![1366](https://user-images.githubusercontent.com/33415084/73004937-6eee6880-3e08-11ea-8f67-4efc6f4c1b2f.png)
 
-### `npm run build`
+###dla szerokości ekranu 1024-769 (tablet 7")
+![1000](https://user-images.githubusercontent.com/33415084/73004935-6e55d200-3e08-11ea-8cd8-fe15c4706a00.png)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+###dla szerokości ekranu 768-569 (telefon większy)
+![590](https://user-images.githubusercontent.com/33415084/73004934-6e55d200-3e08-11ea-9665-01ae46ebb1ec.png)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+###dla szerokości ekranu 568-320 (telefon mniejszy)
+![421](https://user-images.githubusercontent.com/33415084/73004932-6e55d200-3e08-11ea-8504-b721c41dfd14.png)

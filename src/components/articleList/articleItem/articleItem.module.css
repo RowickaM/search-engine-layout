@@ -46,7 +46,7 @@
   z-index: 2;
   color: #262626;
   font-size: 15px;
-  width: 50%;
+  width: 44%;
   margin: auto;
   height: 0;
   overflow-x: auto;
@@ -146,6 +146,11 @@
   .article .triangle.up {
     border-top: 230px solid #c2262e;
     border-left: 230px solid transparent;
+  }
+}
+@media (max-width: 768px) {
+  .article {
+    left: calc(50% - 230px);
   }
 }
 @media (max-width: 568px) {
