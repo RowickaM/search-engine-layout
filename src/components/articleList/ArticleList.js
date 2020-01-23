@@ -51,10 +51,12 @@ class ArticleList extends Component {
         for(let i = 0; i < tab.length; i++){
             if(e.dataset.id === tab[i].id){
                 tab[i].show=!tab[i].show;
-                // this.setState({listOfArticles:tab, blur:tab[i].show});
+                this.setState({listOfArticles:tab, blur:tab[i].show});
                 break;
             }
         }
+        console.log("hoverHandler");
+
     };
 
     render() {
@@ -73,7 +75,7 @@ class ArticleList extends Component {
         return (
             <div className={`${styles.list}`}>
                 {listArticles}
-                <div className={`${this.state.blur ? styles.blur: ''}`} />
+                <div className={`${this.state.blur && window.innerWidth > 1024 ? styles.blur: ''}`} />
             </div>
         );
     }

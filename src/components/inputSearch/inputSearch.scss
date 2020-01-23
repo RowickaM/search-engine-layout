@@ -42,7 +42,13 @@
     }
   }
 }
-
+@include breakpoints('tablet10'){
+  .input-search{
+    input{
+      font-size: 20px;
+    }
+  }
+}
 @include breakpoints('phoneL'){
   .input-search{
     justify-content: center;
@@ -64,7 +70,14 @@
     flex-direction: column;
 
     input{
-      width: 100%;
+      width: calc(100% - 50px);
+      font-size: 15px;
+    }
+    .button{
+      padding: 5px;
+      p{
+        font-size: 15px;
+      }
     }
     .button-search{
       padding: 4px;

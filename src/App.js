@@ -18,7 +18,9 @@ class App extends Component {
     countLines = () => {
         const width = window.innerWidth;
         switch (true) {
-            case(width <= 768):
+            case (width <= 568):
+                return 2;
+            case(width <= 1024):
                 return 3;
             case (width <= 1366):
                 return 5;

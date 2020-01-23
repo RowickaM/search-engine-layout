@@ -58,6 +58,21 @@
   .head.search .header h1 {
     font-size: 90px;
   }
+  .head.search .header .heart {
+    width: 18px;
+    height: 18px;
+  }
+  .head.search .header .heart:after, .head.search .header .heart:before {
+    width: 18px;
+    height: 18px;
+    content: "";
+  }
+  .head.search .header .heart:after {
+    top: -13px;
+  }
+  .head.search .header .heart:before {
+    left: -13px;
+  }
 }
 @media (max-width: 1024px) {
   .head .header h1 {
@@ -74,6 +89,21 @@
   .head .header h1 {
     font-size: 80px;
   }
+  .head .header .heart {
+    width: 16px;
+    height: 16px;
+  }
+  .head .header .heart:after, .head .header .heart:before {
+    width: 16px;
+    height: 16px;
+    content: "";
+  }
+  .head .header .heart:after {
+    top: -12px;
+  }
+  .head .header .heart:before {
+    left: -12px;
+  }
 }
 @media (max-width: 568px) {
   .head p {
@@ -84,6 +114,23 @@
   }
   .head.search .header h1 {
     font-size: 30px;
+  }
+  .head.search .header .heart {
+    left: 8px;
+    top: 4px;
+    width: 10px;
+    height: 10px;
+  }
+  .head.search .header .heart:after, .head.search .header .heart:before {
+    width: 10px;
+    height: 10px;
+    content: "";
+  }
+  .head.search .header .heart:after {
+    top: -6px;
+  }
+  .head.search .header .heart:before {
+    left: -6px;
   }
 }
 

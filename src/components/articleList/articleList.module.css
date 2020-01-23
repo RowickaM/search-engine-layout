@@ -21,4 +21,17 @@
   background-color: #262626;
 }
 
+@media (max-width: 1600px) {
+  .list {
+    width: 60%;
+    grid-template: "a a";
+  }
+}
+@media (max-width: 1366px) {
+  .list {
+    grid-template: "a";
+    grid-row-gap: 90px;
+  }
+}
+
 /*# sourceMappingURL=articleList.module.css.map */

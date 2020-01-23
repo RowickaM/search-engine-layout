@@ -22,7 +22,6 @@
     left: 0;
     right: 0;
     text-align: center;
-    //background: white;
     font-size: $sizeParagraph2;
     transition: bottom $time-animation linear, left $time-animation linear;
   }
@@ -48,7 +47,7 @@
     position: absolute;
     top: 0;
     display: flex;
-    transition: width ease-in-out $time-animation;
+    transition: width linear $time-animation;
 
     p {
       text-align: center;
@@ -95,7 +94,7 @@
 
     .title {
       width: $wTriangle1 / 2;
-      top:  -1 * $gap + 10px;
+      top: -1 * $gap + 10px;
       right: $wTriangle1 - $wDesc;
       left: unset;
       bottom: unset;
@@ -113,12 +112,13 @@
       }
     }
 
-    .triangle{
-      &.down{
+    .triangle {
+      &.down {
         bottom: -1 * $gap;
         left: -1 * $gap;
       }
-      &.up{
+
+      &.up {
         top: -1 * $gap;
         right: $wTriangle - $wDesc - $gap;
       }
@@ -129,5 +129,117 @@
     .desc p {
       transition: height linear $time-animation;
     }
+  }
+}
+
+@include breakpoints('tablet10') {
+  .article {
+    left: calc(60% - 230px);
+    width: $wTriangle-t10;
+    height: $wTriangle-t10;
+
+    &.show {
+      .title{
+        right: $wTriangle-t10 - $wDesc-t10 - $gap - 8px;
+        font-size: $sizeParagraph2-t10;
+      }
+      .desc {
+        width: $wDesc-t10;
+      }
+      .number {
+        left: -90px;
+        font-size: $sizeParagraph2-t10;
+      }
+      .triangle {
+        &.down {
+          left: -1 * $gap;
+        }
+
+        &.up {
+          right: $wTriangle-t10 - $wDesc-t10 - $gap;
+        }
+      }
+
+    }
+    &.hide desc{
+      height: $wTriangle-t10;
+    }
+
+    .desc{
+      height: $wTriangle-t10;
+    }
+
+    .triangle {
+      position: absolute;
+      z-index: 1;
+
+      &.down {
+        border-bottom: $wTriangle-t10 solid $red;
+        border-right: $wTriangle-t10 solid transparent;
+      }
+
+      &.up {
+        border-top: $wTriangle-t10 solid $red;
+        border-left: $wTriangle-t10 solid transparent;
+      }
+    }
+  }
+}
+
+@include breakpoints('phoneP'){
+  .article {
+    left: -$gap;
+    //width: $wTriangle-pP;
+    //height: $wTriangle-t10;
+
+    .triangle {
+
+      &.down {
+        border-bottom: $wTriangle-pP solid $red;
+        border-right: $wTriangle-pP solid transparent;
+      }
+
+      &.up {
+        border-top: $wTriangle-pP solid $red;
+        border-left: $wTriangle-pP solid transparent;
+      }
+    }
+    &.show {
+      .title{
+        right: -82px;
+        top: -43px;
+        width: $wTriangle-pP / 2;
+        font-size: $sizeParagraph2-pP;
+      }
+      .desc {
+        width: $wDesc-pP;
+        p{
+          width: 60%;
+        }
+      }
+      .number {
+        left: -18px;
+        width: 100px;
+        font-size: $sizeParagraph2-pP - 1px;
+      }
+      .triangle {
+        &.down {
+          left: -1 * $gap;
+        }
+
+        &.up {
+          right: -74px;
+        }
+      }
+
+    }
+    &.hide desc{
+      height: $wTriangle-t10;
+    }
+
+    .desc{
+      height: $wTriangle-t10;
+    }
+
   }
 }

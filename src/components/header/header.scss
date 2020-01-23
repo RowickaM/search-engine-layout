@@ -75,6 +75,24 @@
       h1 {
         font-size: 90px;
       }
+      .heart {
+        width: 18px;
+        height: 18px;
+
+        &:after, &:before {
+          width: 18px;
+          height: 18px;
+          content: '';
+        }
+
+        &:after {
+          top: -13px;
+        }
+
+        &:before {
+          left: -13px;
+        }
+      }
     }
   }
 }
@@ -103,6 +121,24 @@
       h1 {
         font-size: 80px;
       }
+      .heart {
+        width: 16px;
+        height: 16px;
+
+        &:after, &:before {
+          width: 16px;
+          height: 16px;
+          content: '';
+        }
+
+        &:after {
+          top: -12px;
+        }
+
+        &:before {
+          left: -12px;
+        }
+      }
     }
   }
 }
@@ -123,6 +159,26 @@
       .header {
         h1 {
           font-size: 30px;
+        }
+        .heart {
+          left: 8px;
+          top: 4px;
+          width: 10px;
+          height: 10px;
+
+          &:after, &:before {
+            width: 10px;
+            height: 10px;
+            content: '';
+          }
+
+          &:after {
+            top: -6px;
+          }
+
+          &:before {
+            left: -6px;
+          }
         }
       }
     }
